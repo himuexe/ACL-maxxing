@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_cdltd_travel_r_0.travel desk" name="x_cdltd_travel_r_0.travel desk">069790b479f303107f44ab9de740eaa8</contains>
+        <role display_value="x_cdltd_travel_r_0.travel admin" name="x_cdltd_travel_r_0.travel admin">469790b479f303107f44ab9de740ea93</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 11:12:51</sys_created_on>
+        <sys_id>17b8bcf879b703107f44ab9de740eac1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_cdltd_travel_r_0.travel desk.x_cdltd_travel_r_0.travel admin</sys_name>
+        <sys_package display_value="Travel Request Manager" source="x_cdltd_travel_r_0">ca9790b479f303107f44ab9de740ea7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Request Manager">ca9790b479f303107f44ab9de740ea7a</sys_scope>
+        <sys_update_name>sys_user_role_contains_17b8bcf879b703107f44ab9de740eac1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 11:12:51</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

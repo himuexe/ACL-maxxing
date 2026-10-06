@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>return_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Return Date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	var departureDate = g_form.getValue('departure_date');
+	if(!departureDate) return;
+	var returnDate = new Date(newValue);
+	var departure = new Date(departureDate);
+
+	returnDate.setHours(0, 0, 0, 0);
+	departure.setHours(0, 0, 0, 0);
+	if(returnDate<departure){
+		g_form.showFieldMsg('return_date','Return Date cannot be earlier than Departure Date.','error');
+	}
+   //Type appropriate comment here, and begin script below
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-05 10:33:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cf4f2cb4797703107f44ab9de740eaa9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Return Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Travel Request Manager" source="x_cdltd_travel_r_0">ca9790b479f303107f44ab9de740ea7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Travel Request Manager">ca9790b479f303107f44ab9de740ea7a</sys_scope>
+        <sys_update_name>sys_script_client_cf4f2cb4797703107f44ab9de740eaa9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-05 10:33:15</sys_updated_on>
+        <table>x_cdltd_travel_r_0_travel_request</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
