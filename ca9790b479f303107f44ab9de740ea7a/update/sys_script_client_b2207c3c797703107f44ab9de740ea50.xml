@@ -15,6 +15,7 @@
    if(g_form.isNewRecord()){
 	g_form.addInfoMessage('Travel Policy Reminder: Please ensure your travel dates, estimated cost, visa requirenments, and approvals are completed before booking travel.');
    }
+   //Policy Reminder validation
    
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -23,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b2207c3c797703107f44ab9de740ea50</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Travel Policy Reminder</sys_name>
         <sys_overrides/>
         <sys_package display_value="Travel Request Manager" source="x_cdltd_travel_r_0">ca9790b479f303107f44ab9de740ea7a</sys_package>
@@ -31,7 +32,7 @@
         <sys_scope display_value="Travel Request Manager">ca9790b479f303107f44ab9de740ea7a</sys_scope>
         <sys_update_name>sys_script_client_b2207c3c797703107f44ab9de740ea50</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-10-05 10:35:51</sys_updated_on>
+        <sys_updated_on>2026-10-06 02:12:30</sys_updated_on>
         <table>x_cdltd_travel_r_0_travel_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
